@@ -1,0 +1,47 @@
+@use '../abstracts' as abst;
+
+.why-us {
+  padding: calc(abst.$space-section-responsive * 2);
+  background-color: abst.$primary;
+  background:
+    url(../images/backgrounds/pattern-circles-cyan-logo.svg),
+    url(../images/backgrounds/pattern-circles-cyan.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: top right;
+  background-size: 700px;
+  box-shadow: abst.$drop-shadow-inset;
+
+  &__video {
+    // width: 120rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: abst.$space-section-responsive;
+  }
+
+  &__content {
+    // margin-bottom: calc(abst.$space-section-responsive * 2);
+
+    &__mission {
+      border-radius: abst.$border-radius-default;
+      padding-block: abst.$space-section-responsive;
+      background-color: abst.$color-white;
+      box-shadow: abst.$drop-shadow-default;
+      transform: rotate(-3deg);
+
+      @media screen and (max-width: abst.$breakpoint-md) {
+        transform: rotate(0deg);
+      }
+
+      &__title {
+        display: flex;
+        justify-content: center;
+      }
+
+      &__copy {
+        margin: 0 auto;
+        padding-inline: abst.$space-copy-responsive;
+        max-width: 100ch;
+      }
+    }
+  }
+}

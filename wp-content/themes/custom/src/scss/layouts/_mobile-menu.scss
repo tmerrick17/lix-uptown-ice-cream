@@ -1,0 +1,7 @@
+@use '../abstracts' as abst;
+
+.mobile-menu {
+  @media screen and (min-width: abst.$breakpoint-lg) {
+    display: none;
+  }
+}

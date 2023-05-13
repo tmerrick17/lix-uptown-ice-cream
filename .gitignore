@@ -1,0 +1,32 @@
+# GIT IGNORE
+
+node_modules
+
+
+# Build Files
+
+*.env
+.nyc_output
+coverage
+
+
+# Windows detritus
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+
+# Mac detritus
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+
+# Cron
+
+cron/logs/*
+!cron/logs/.keepfile

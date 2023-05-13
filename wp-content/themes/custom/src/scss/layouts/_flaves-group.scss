@@ -1,0 +1,23 @@
+@use '../abstracts' as abst;
+
+.group-flaves {
+  padding-block: calc(abst.$space-section-responsive * 2);
+
+  &__new,
+  &__orig {
+    background-color: abst.$color-white;
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      margin-top: calc(abst.$space-subsection-responsive
+      * 2);
+      margin-bottom: abst.$space-subsection-responsive;
+    }
+
+  }
+
+  &__orig {
+    padding-bottom: abst.$space-section-responsive;
+  }
+}

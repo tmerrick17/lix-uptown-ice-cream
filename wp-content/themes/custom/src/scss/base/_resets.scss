@@ -1,0 +1,35 @@
+@use '../abstracts' as abst;
+
+/* * CSS Reset & Universal Styles */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%; //! Not sure if I need
+}
+
+a {
+  text-decoration: none;
+}
+
+/* * Removing default focus outline in browsers to add my own focus styles */
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}

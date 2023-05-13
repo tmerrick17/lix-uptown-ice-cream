@@ -1,0 +1,15 @@
+@use '../abstracts' as abst;
+
+/* * Html Styles */
+html {
+    background-color: abst.$primary;
+    font-size: 62.5%;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    overscroll-behavior-y: auto;
+}
+
+/* * Body Styles */
+body {
+    background-color: abst.$color-white;
+}

@@ -1,0 +1,11 @@
+@use '../abstracts' as abst;
+
+.logo {
+  height: auto;
+  transition: height 0.25s ease-in;
+
+  &--shrink {
+    height: 5rem;
+  }
+}
+

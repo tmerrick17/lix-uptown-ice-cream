@@ -1,0 +1,22 @@
+@use '../abstracts' as abst;
+
+.clipboard {
+  display: flex;
+  justify-content: center;
+  margin-bottom: abst.$space-subsection-responsive;
+
+  &__img {
+    position: relative;
+  }
+
+  &__flavor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: abst.$color-white;
+    font-family: abst.$font-primary;
+    font-size: abst.$font-copy-responsive;
+    text-align: center;
+  }
+}

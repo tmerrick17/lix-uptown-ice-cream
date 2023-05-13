@@ -1,0 +1,18 @@
+@use '../abstracts' as abst;
+
+.header {
+  background-color: abst.$color-white;
+  font-size: abst.$font-md;
+  position: sticky;
+  top: 0;
+  padding-block: abst.$space-md;
+  z-index: 50;
+  transition:
+    padding 0.4s ease-in-out,
+    border 0.35s ease-in-out;
+
+  &--shrink {
+    padding-block: clamp(abst.$space-xs, 4vw, abst.$space-sm);
+    border-bottom: solid abst.$primary 0.3rem;
+  }
+}

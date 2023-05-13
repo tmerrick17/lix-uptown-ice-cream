@@ -1,0 +1,24 @@
+@use '../abstracts' as abst;
+
+.button {
+  text-align: center;
+
+  .button__title {
+    background-color: abst.$primary;
+    border-radius: abst.$border-radius-default;
+    padding: abst.$space-button-outline;
+    text-decoration: none;
+    font-family: abst.$font-primary;
+    font-size: abst.$font-h2-responsive;
+    color: abst.$color-white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: abst.$transition-color, abst.$transition-background;
+    margin-bottom: abst.$space-subsection-responsive;
+
+    &:hover {
+      color: abst.$secondary;
+      background-color: abst.$color-white;
+    }
+  }
+}

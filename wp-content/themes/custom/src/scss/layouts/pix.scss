@@ -1,0 +1,18 @@
+@use '../abstracts' as abst;
+
+.pix {
+  background-color: abst.$secondary;
+  padding-bottom: calc(abst.$space-copy-responsive * 2);
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(abst.$space-subsection-responsive
+    * 2);
+    // margin-bottom: abst.$space-subsection-responsive;
+  }
+
+  // .sb_instagram_header {
+  //   display: none;
+  // }
+}

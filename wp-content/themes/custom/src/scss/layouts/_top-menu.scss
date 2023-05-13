@@ -1,0 +1,96 @@
+@use '../abstracts' as abst;
+
+.top-menu {
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-family: abst.$font-primary;
+    font-size: abst.$font-copy-responsive;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 0;
+
+    &__find-us {
+      @media screen and (max-width: abst.$breakpoint-lg) {
+        display: none;
+      }
+    }
+
+    .menu-item-has-children {
+      position: relative;
+
+      @media (max-width: abst.$breakpoint-sm) {
+        display: none;
+      }
+
+      .sub-menu {
+        position: absolute;
+        border-radius: abst.$border-radius-default;
+        background-color: abst.$color-white;
+        padding-left: 0;
+        top: 3.5rem;
+        left: 3rem;
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(-3rem);
+        z-index: -1;
+        transition:
+          all 0.3s ease-in 0s,
+          visibility 0s linear 0.3s,
+          z-index 0s linear 0.01s;
+
+        .menu-item {
+          margin-top: 0.8rem;
+          width: max-content;
+        }
+      }
+
+      &:hover .sub-menu {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transform: tranlateY(0);
+        transition-delay: 0s, 0s, 0.3s;
+        border-bottom: solid 3px abst.$primary;
+      }
+
+    }
+
+    a {
+      padding: abst.$space-title-outline;
+      text-decoration: none;
+      color: abst.$secondary;
+      transition: abst.$transition-button;
+      border-radius: abst.$border-radius-default;
+
+      &:hover {
+        color: abst.$primary;
+        box-shadow: 0 0 0 3px abst.$primary;
+        z-index: 40;
+      }
+    }
+
+    .menu-item--gift-card {
+      margin-left: 0;
+
+      @media screen and (min-width: abst.$breakpoint-xl) {
+        margin-left: 6rem;
+      }
+
+      a {
+        background-color: abst.$primary;
+        color: abst.$color-white;
+        transition: abst.$transition-background, abst.$transition-color;
+        z-index: 30;
+
+        &:hover {
+          background-color: abst.$color-white;
+          color: abst.$primary;
+        }
+      }
+    }
+  }
+}
+

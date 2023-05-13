@@ -1,0 +1,65 @@
+@use '../abstracts' as abst;
+
+.notification-bar {
+  background-color: abst.$primary;
+
+  &__content {
+    padding-block: 0.8rem;
+
+    &__left {
+      display: flex;
+      align-items: center;
+
+      &__text {
+        font-family: abst.$font-primary;
+        font-size: abst.$font-copy-responsive;
+
+        a {
+          text-decoration: none;
+          color: abst.$secondary;
+          transition: abst.$transition-color;
+
+          &:hover {
+            color: abst.$color-white;
+          }
+        }
+      }
+    }
+
+    &__right {
+      display: flex;
+      gap: 3rem;
+      justify-content: flex-end;
+      align-items: center;
+
+      @media screen and (max-width: abst.$breakpoint-sm) {
+        gap: 1.5rem;
+      }
+
+      &__icon {
+
+        a {
+
+          svg {
+            font-size: abst.$icon-size-default;
+            color: abst.$secondary;
+            transition: abst.$transition-color;
+
+            &.fa-square-instagram:hover {
+              color: abst.$color-white;
+            }
+
+            &.fa-square-facebook:hover {
+              color: abst.$color-white;
+            }
+
+            &.fa-spotify:hover {
+              color: abst.$color-white;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use '../abstracts' as abst;
+
+.footer {
+    padding-block: abst.$space-small-responsive;
+    background-color: abst.$primary;
+
+    img {
+      width: 10rem;
+    }
+
+    p {
+      font-size: abst.$font-copy-responsive;
+      color: hsl(0, 0%, 0%);
+      text-align: right;
+    }
+}

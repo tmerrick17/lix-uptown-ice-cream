@@ -1,0 +1,94 @@
+// Color Variables
+$color-magenta: hsl(328, 98%, 59%);
+$color-magenta-lite: lighten($color-magenta, 20%);
+$color-cyan: hsl(196, 63%, 57%);
+$color-dark: hsl(45, 13%, 6%);
+$color-white: hsl(0, 0%, 98%);
+
+// Color Scheme
+$primary: $color-magenta;
+$primary-lite: $color-magenta-lite;
+$secondary: $color-dark;
+$terterary: $color-cyan;
+
+// Typography Variables
+$font-primary: 'Modern Typewriter', 'Courier New', Courier;
+
+$font-sm: 1.6rem;
+$font-md: 2rem;
+$font-lg: 2.4rem;
+$font-xl: 3rem;
+$font-xxl: 3.5rem;
+$font-xxxl: 4rem;
+
+$font-h1-mobile: $font-xl;
+$font-h1-desktop: $font-xxxl;
+$font-h2-mobile: $font-lg;
+$font-h2-desktop: $font-xxl;
+$font-copy-mobile: $font-sm;
+$font-copy-desktop: $font-md;
+
+$font-copy-responsive: clamp($font-sm, 2vw, $font-md);
+$font-h2-responsive: clamp($font-lg, 3vw, $font-xxl);
+$font-h1-responsive: clamp($font-xl, 5vw, $font-xxxl);
+
+// Icon variables
+$icon-size-default: 2.8rem;
+
+// Margin/Padding Variables
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2.5rem;
+$space-lg: 3.8rem;
+$space-xl: 4.6rem;
+$space-xxl: 5.2rem;
+
+$space-section-mobile: $space-xl;
+$space-section-desktop: $space-xxl;
+$space-subsection-mobile: $space-lg;
+$space-subsection-desktop: $space-xl;
+$space-copy-mobile: $space-md;
+$space-copy-desktop: $space-lg;
+$space-small-mobile: $space-sm;
+$space-small-desktop: $space-md;
+
+$space-title-outline: $space-xs $space-sm;
+$space-button-outline: $space-sm $space-md;
+
+$space-section-responsive: clamp($space-section-mobile, 15vw, $space-section-desktop);
+$space-subsection-responsive: clamp($space-subsection-mobile, 4vw, $space-subsection-desktop);
+$space-copy-responsive: clamp($space-copy-mobile, 2vw, $space-copy-desktop);
+$space-small-responsive: clamp($space-small-mobile, 1vw, $space-small-desktop);
+
+// Outline (Box-Shadow)
+$outline-primary: 0 0 0 3px $primary;
+$outline-secondary: 0 0 0 3px $secondary;
+$outline-white: 0 0 0 3px $color-white;
+
+// Drop-shadow
+$drop-shadow-default: 5px 3px 40px hsla(0, 0%, 0%, 0.3);
+$drop-shadow-inset: inset 5px 3px 40px hsla(0, 0%, 0%, 0.3);
+
+// Border-Radius
+$border-radius-default: 5px;
+
+// Transitions & Animations
+$transition-color: color 0.25s ease-in;
+$transition-background: background-color 0.25s ease-in;
+$transition-outline: box-shadow 0.25s ease-in;
+
+$transition-button: $transition-color, $transition-outline;
+
+$animation-dropdown: animate 0.3s ease-in-out forwards;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+
+
+
+

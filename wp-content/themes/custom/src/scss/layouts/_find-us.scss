@@ -1,0 +1,78 @@
+@use '../abstracts' as abst;
+
+.find-us {
+  padding: calc(abst.$space-section-responsive * 2);
+  background-color: abst.$terterary;
+  background:
+    url(../images/backgrounds/pattern-circles-magenta-logo.svg),
+    url(../images/backgrounds/pattern-circles-magenta.svg);
+  background-repeat: no-repeat, repeat;
+  background-size: 700px;
+  box-shadow: abst.$drop-shadow-inset;
+
+  &__content {
+    border-radius: abst.$border-radius-default;
+    padding-block: abst.$space-section-responsive;
+    background-color: abst.$color-white;
+    box-shadow: abst.$drop-shadow-default;
+    transform: rotate(3deg);
+
+    @media screen and (max-width: abst.$breakpoint-md) {
+      transform: rotate(0deg);
+      text-align: center;
+    }
+
+    &__left {
+      @media screen and (max-width: abst.$breakpoint-md) {
+        padding-bottom: abst.$space-copy-mobile;
+      }
+
+      &__title {
+        @media screen and (max-width: abst.$breakpoint-md) {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      &__address {
+        color: abst.$primary;
+        margin-bottom: abst.$space-copy-responsive;
+
+        a {
+          text-decoration: none;
+          color: abst.$primary;
+          transition: abst.$transition-color;
+
+          &:hover {
+            color: abst.$terterary;
+          }
+        }
+
+        &__phone,
+        &__email {
+          margin-top: abst.$space-copy-responsive;
+
+          a {
+            text-decoration: none;
+            color: abst.$primary;
+            transition: abst.$transition-color;
+
+            &:hover {
+              color: abst.$terterary;
+            }
+          }
+        }
+      }
+    }
+
+    &__right {
+      width: 600px;
+      aspect-ratio: 2 / 1;
+      object-fit: cover;
+    }
+
+    img {
+      border-radius: abst.$border-radius-default;
+    }
+  }
+}

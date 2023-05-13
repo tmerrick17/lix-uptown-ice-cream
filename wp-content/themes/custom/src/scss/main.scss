@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+// Scss files
+@use './abstracts' as abst;
+@use './themes' as thm;
+@use './base' as base;
+@use './layouts' as lyt;
+@use './components' as cpnt;
+@use './pages' as page;
+
+@import './vendors/bootstrap';

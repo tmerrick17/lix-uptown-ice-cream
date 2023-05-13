@@ -1,0 +1,31 @@
+@use '../abstracts' as abst;
+
+.yelps {
+  padding-bottom: calc(abst.$space-copy-responsive * 2);
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(abst.$space-subsection-responsive
+    * 2);
+    margin-bottom: abst.$space-subsection-responsive;
+  }
+
+  .sb-feed-header-heading {
+    display: none;
+  }
+
+  .sbr-owl-prev,
+  .sbr-owl-next {
+    display: block !important;
+  }
+
+  // .sb-post-item-wrap {
+  //   min-height: 41rem;
+  // }
+
+  #sb-reviews-container-1 [data-post-style="regular"] .sb-post-item-wrap {
+    border-bottom: none;
+
+  }
+}

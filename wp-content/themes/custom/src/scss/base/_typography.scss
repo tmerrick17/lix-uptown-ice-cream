@@ -1,0 +1,30 @@
+@use '../abstracts' as abst;
+
+@font-face {
+  font-family: 'Modern Typewriter';
+  src: url('../fonts/Modern-Typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+p,
+address {
+  font-family: abst.$font-primary;
+}
+
+h2 {
+  font-size: abst.$font-h2-responsive;
+}
+
+p,
+address {
+  font-size: abst.$font-copy-responsive;
+}
+
+
+
+
+
+
