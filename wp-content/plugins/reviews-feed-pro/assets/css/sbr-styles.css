@@ -1243,7 +1243,7 @@
     [id^=sb-reviews-container-] .sb-grid-wrapper[data-grid-tablet-columns="6"] .sb-feed-posts {grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
 }
 
-@media all and (max-width: 480px){
+@media all and (max-width: 560px){
     [id^=sb-reviews-container-] .sb-colsmobile-1 .sb-post-item-wrap{ width: 100%; }
     [id^=sb-reviews-container-] .sb-colsmobile-2 .sb-post-item-wrap{ width: calc( 50% - calc((var(--column-gutter) * 1) / 2)); }
     [id^=sb-reviews-container-] .sb-colsmobile-3 .sb-post-item-wrap{ width: calc( 33.33% - calc((var(--column-gutter) * 2 ) / 3) );}
