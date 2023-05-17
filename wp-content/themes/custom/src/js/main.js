@@ -1,5 +1,6 @@
-// Shrinking header on scroll down
-// document.addEventListener('scroll', () => {
+// import { throttle } from 'lodash';
+
+// const handleScroll = throttle(() => {
 //   if (document.documentElement.scrollTop > 100) {
 //     document.querySelector('header').classList.add('header--shrink');
 //     document.querySelector('.logo').classList.add('logo--shrink');
@@ -7,21 +8,10 @@
 //     document.querySelector('header').classList.remove('header--shrink');
 //     document.querySelector('.logo').classList.remove('logo--shrink');
 //   }
-// });
+// }, 400);
 
-import { throttle } from 'lodash';
+// document.addEventListener('scroll', handleScroll);
 
-const handleScroll = throttle(() => {
-  if (document.documentElement.scrollTop > 100) {
-    document.querySelector('header').classList.add('header--shrink');
-    document.querySelector('.logo').classList.add('logo--shrink');
-  } else {
-    document.querySelector('header').classList.remove('header--shrink');
-    document.querySelector('.logo').classList.remove('logo--shrink');
-  }
-}, 400); // Set the throttle time to x milliseconds
-
-document.addEventListener('scroll', handleScroll);
 
 // Update menu items on smaller screen size
 const navItemNewFlaves = document.querySelector('.menu-item--new-flaves a');

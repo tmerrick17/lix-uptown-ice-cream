@@ -5,11 +5,12 @@
   font-size: abst.$font-md;
   position: sticky;
   top: 0;
-  padding-block: abst.$space-md;
+  padding-block: abst.$space-sm;
   z-index: 50;
+  border-bottom: solid abst.$primary 0.3rem;
   transition:
-    padding 0.4s ease-in-out,
-    border 0.35s ease-in-out;
+  padding 0.4s ease-in-out,
+  border 0.35s ease-in-out;
 
   &--shrink {
     padding-block: clamp(abst.$space-xs, 4vw, abst.$space-sm);
